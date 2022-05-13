@@ -1,0 +1,47 @@
+{
+    "q1": {
+        "question": "Best consumer-grade graphics card.",
+        "optionName": [
+            "GTX Titan",
+            "Nvidia Quadro",
+            "RTX 3090Ti",
+            "RX 900XT"
+        ],
+        "answer": [
+            false,
+            false,
+            true,
+            false
+        ]
+    },
+    "q2": {
+        "question": "Data rate range of DDR5",
+        "optionName": [
+            "4800-7200 Mhz",
+            "5000-6000 Mhz",
+            "4800-8800 Mhz",
+            "5000-12000 Mhz"
+        ],
+        "answer": [
+            true,
+            false,
+            false,
+            false
+        ]
+    },
+    "q3": {
+        "question": "Microarchitecture of Nvidia RTX 3000 series",
+        "optionName": [
+            "Pascal",
+            "Alder Lake",
+            "Ampere",
+            "Turing"
+        ],
+        "answer": [
+            false,
+            false,
+            true,
+            false
+        ]
+    }
+}

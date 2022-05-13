@@ -1,0 +1,85 @@
+.btn {
+    padding: 0.6rem 3.3rem;
+    min-width: 103%;
+    margin: 1.3% auto 1.3%;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+}
+
+.btn:hover {
+    background-color: rgb(152, 190, 190);
+    box-shadow: 0.1rem 0.1rem #0d0f0f;
+    background-color: rgb(7, 7, 22);
+    color: rgb(255, 247, 240);
+
+}
+
+.question {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 3.3rem;
+}
+
+.quiz-box {
+    display: inline-block;
+    /* justify-content: center; */
+    padding: 3% 9% 6%;
+    background-color: #1d1f1f;
+    width: 43%;
+}
+
+.result {
+    margin-top: 5%;
+    font-family: monospace;
+}
+
+.span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    position: relative;
+    bottom: 490px;
+    left: 333px;
+    color: rgb(162, 168, 173);
+}
+
+.span span {
+    color: rgb(255, 249, 249);
+}
+
+.retake {
+    margin-top: 3rem;
+    background-color: transparent;
+    color: aliceblue;
+    border: solid;
+    border-radius: 0.3rem;
+    border-width: 0.003rem;
+    padding: 1.1rem 1.6rem;
+    font-size: 0.9rem;
+
+}
+
+.score {
+    margin-top: 6rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+.startBtn {
+    padding: 0.8rem 1.1rem;
+    border-color: white;
+    background-color: transparent;
+    color: rgb(249, 251, 253);
+    border-radius: 0.3rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    margin-top: 3rem;
+}
+
+.startBtn:hover {
+    color: rgb(27, 28, 29);
+    background-color: white;
+    /* box-shadow: 3px 3px 6px 6px rgb(111, 114, 117); */
+
+}
