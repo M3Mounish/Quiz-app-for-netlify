@@ -57,8 +57,8 @@ function Login(props) {
             {!register && <div className="form">
                 <h3>Login</h3>
                 <form onSubmit={handleLogin}>
-                    <input className="input un" type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <input className="input pw" type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input className="input un" type="text" placeholder=" username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <input className="input pw" type="password" placeholder=" password" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <button className="form-btn" type="submit">Submit</button>
                 </form>
                 <button className='login-redirect-btn' onClick={() => { setRegister(true) }}>New?Signup</button>

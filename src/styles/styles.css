@@ -23,6 +23,7 @@ h2 {
     /* margin-top: 0.9rem; */
 }
 
+
 .btn {
     padding: 0.6rem 3.3rem;
     min-width: 103%;
@@ -170,7 +171,7 @@ header {
     background-color: transparent;
     color: aliceblue;
     border: transparent;
-    border-radius: 0.03rem;
+    border-radius: 0.33rem;
     display: block;
     margin: 1.3rem 0;
     min-width: 39%;
@@ -253,4 +254,46 @@ header {
     min-height: 0.3rem;
     padding: 0.3rem 0;
     margin: 1.3rem auto;
+}
+
+@media only screen and (max-width: 720px) {
+    h2 {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        font-size: smaller;
+        position: relative;
+        left: 13%;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .home-logo {
+        position: relative;
+        min-width: 9%;
+        right: 50%;
+        margin-top: 0.13rem;
+
+    }
+
+    .login-btn {
+        position: relative;
+        left: 18%;
+    }
+
+    .input {
+        border: solid;
+        border-color: rgb(209, 209, 209);
+        border-width: 0.03rem;
+    }
+
+    .form-btn {
+        border: solid;
+        border-color: aliceblue;
+        border-width: 0.00003rem;
+        margin-bottom: 0.13rem;
+    }
+
 }
