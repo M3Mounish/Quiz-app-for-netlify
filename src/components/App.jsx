@@ -11,7 +11,7 @@ import axios from "axios";
 
 function App() {
   //hide/show
-  const [home, setHome] = useState(1);//1-home 2-login 3-Profile
+  const [home, setHome] = useState(1);//1-home 2-login 3-Profile 4-trialForQuiz
   //user
   const [user, setUser] = useState(false);
   const [profileName, setProfileName] = useState('');
@@ -52,10 +52,10 @@ function App() {
         {!user ? <button className="login-btn" onClick={() => { setHome(2) }}>Login</button> : <button className="profile-btn" onClick={handleProfile}><Userlogo className="user-logo" />{profileName}</button>}
       </div>
       {home === 1 && <Home />}
-      {/* {!home && <Quiz />} */}
+      {home === 4 && <Quiz />}
 
       {/* <p>Nothing .... Ever walk away... i'll never walk on cornelia street agian!</p> */}
-      {/* {home && !login && <button onClick={() => { setHome(false) }}>Quiz 1</button>} */}
+      {home === 1 && <button onClick={() => { setHome(4) }}>Quiz 1</button>}
 
       {home === 2 && <Login user={cB} />}
 

@@ -7,6 +7,7 @@ body {
 h1 {
     margin-top: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 div.main-div {
@@ -15,14 +16,17 @@ div.main-div {
 
 h2 {
     font-family: Georgia, Times, serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     align-items: center;
-    margin-left: 8.3rem;
-    /* margin-top: 0.9rem; */
+    margin: auto;
+    margin-top: 0.9rem;
 }
 
+h3 {
+    margin: auto;
+}
 
 .btn {
     padding: 0.6rem 3.3rem;
@@ -116,11 +120,11 @@ header {
 }
 
 .home-logo {
-    position: relative;
+    position: absolute;
     filter: brightness(0) invert(0.9);
     max-width: 2.3%;
-    right: 53%;
-    top: 3%;
+    right: 93%;
+    top: 4%;
     margin-top: 0.3rem;
 }
 
@@ -131,20 +135,18 @@ header {
 
 
 .profile-btn {
-    position: relative;
-    left: 26%;
+    position: absolute;
+    left: 79%;
     top: 3%;
     margin-top: 0.3rem;
     padding: 0.23rem 0.3rem;
     color: aliceblue;
     border-radius: 0.13rem;
     background-color: transparent;
-    /* align-items: center; */
     text-align: center;
     display: inline-block;
-    margin-bottom: -3px;
-    margin-right: 4px;
-    min-width: 16%;
+    min-width: 19%;
+    font-size: 0.8rem;
 }
 
 .profile-btn:hover {
@@ -154,7 +156,7 @@ header {
 .user-logo {
     filter: brightness(0) invert(0.93);
     max-width: 13%;
-    margin-right: 0.3rem;
+    margin-right: auto;
 }
 
 
@@ -254,6 +256,17 @@ header {
     min-height: 0.3rem;
     padding: 0.3rem 0;
     margin: 1.3rem auto;
+}
+
+.logout-btn {
+    background-color: rgb(167, 51, 51);
+    color: aliceblue;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    bottom: 10%;
+    right: 45%;
+    left: 45%;
 }
 
 @media only screen and (max-width: 720px) {
