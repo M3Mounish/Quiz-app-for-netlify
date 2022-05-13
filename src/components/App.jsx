@@ -16,11 +16,6 @@ function App() {
   const [user, setUser] = useState(false);
   const [profileName, setProfileName] = useState('');
 
-  axios.get('http://localhost:3333/')
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => { console.log(err); })
 
   function cB(data, username, redirect) {
     setProfileName(username);

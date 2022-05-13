@@ -10,7 +10,7 @@ function Register(props) {
     async function handleSignup(e) {
         e.preventDefault();
 
-        await axios.post('http://localhost:3333/register', { username, password })
+        await axios.post('https://quiz-app-m3.herokuapp.com/register', { username, password })
             .then(function (response) {
                 if (response.data === "none") {
                     alert("Not filled completely ;(")

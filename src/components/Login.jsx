@@ -14,7 +14,7 @@ function Login(props) {
 
     async function handleLogin(e) {
         e.preventDefault();
-        await axios.post('http://localhost:3333/login', { username, password })
+        await axios.post('https://quiz-app-m3.herokuapp.com/login', { username, password })
             .then(function (response) {
                 console.log(response);
                 if (response.data === false) {
