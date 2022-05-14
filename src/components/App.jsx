@@ -53,7 +53,7 @@ function App() {
       </div>
       {home === 1 && <Home />}
       {home === 4 && <Quiz />}
-
+      {/* <div className="loading-spinner"></div> */}
       {/* <p>Nothing .... Ever walk away... i'll never walk on cornelia street agian!</p> */}
       {home === 1 && <button onClick={() => { setHome(4) }}>Quiz 1</button>}
 

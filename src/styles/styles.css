@@ -24,9 +24,6 @@ h2 {
     margin-top: 0.9rem;
 }
 
-h3 {
-    margin: auto;
-}
 
 .btn {
     padding: 0.6rem 3.3rem;
@@ -162,6 +159,7 @@ header {
 
 /* forms */
 .form {
+    margin: auto;
     margin-top: 3rem;
     text-align: center;
     display: inline-block;
@@ -223,8 +221,8 @@ header {
 }
 
 .login-btn {
-    position: relative;
-    left: 29%;
+    position: absolute;
+    left: 89%;
     top: 3%;
     margin-top: 0.3rem;
     padding: 0.23rem 0.3rem;
@@ -234,10 +232,17 @@ header {
     text-align: center;
     display: inline-block;
     min-width: 9%;
+    font-size: 0.8rem;
 }
 
 .login-btn:hover {
     box-shadow: 0.03rem 0.03rem 0.06rem 0.06rem #c1c1c2;
+
+}
+
+.login-title {
+
+    margin: auto;
 
 }
 
@@ -267,6 +272,36 @@ header {
     bottom: 10%;
     right: 45%;
     left: 45%;
+}
+
+.loading-container {
+    /* padding: 0.3rem; */
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    position: absolute;
+    right: 47.5%;
+    left: 47.5%;
+    margin: auto;
+    top: 26%;
+    width: 23px;
+    height: 23px;
+    border: 6px solid #a9adaf;
+    /* Light grey */
+    border-top: 6px solid #313030;
+    /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
 }
 
 @media only screen and (max-width: 720px) {

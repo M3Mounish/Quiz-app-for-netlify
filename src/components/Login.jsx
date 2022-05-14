@@ -9,11 +9,12 @@ function Login(props) {
     const [password, setPassword] = useState('');
     //trigger
     const [register, setRegister] = useState(false);
-
+    const [loading, setLoading] = useState(false);
 
 
     async function handleLogin(e) {
         e.preventDefault();
+        setLoading(true);
         await axios.post('https://quiz-app-m3.herokuapp.com/login', { username, password })
             .then(function (response) {
                 console.log(response);
@@ -22,7 +23,7 @@ function Login(props) {
                 } else if (response.status === 200 && response.data !== false) {
                     setUsername(''); setPassword('');
                     // console.log(response.data[0].username);
-                    alert("Going good here!");
+                    // alert("Going good here!");
 
                     props.user('y', response.data[0].username, 1);
                     console.log("default");
@@ -32,6 +33,7 @@ function Login(props) {
             .catch(function (error) {
                 console.log(error);
             })
+        setLoading(false);
     }
 
     // useEffect(() => {
@@ -55,8 +57,13 @@ function Login(props) {
     return (
         <div>
             {!register && <div className="form">
-                <h3>Login</h3>
+                <h3 className='login-title'>Login</h3>
                 <form onSubmit={handleLogin}>
+                    <div className='loading-container'>
+                        {loading && <div className="loading-spinner" />}
+                    </div>
+
+
                     <input className="input un" type="text" placeholder=" username" value={username} onChange={(e) => setUsername(e.target.value)} />
                     <input className="input pw" type="password" placeholder=" password" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <button className="form-btn" type="submit">Submit</button>
