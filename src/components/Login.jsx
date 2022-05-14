@@ -36,17 +36,6 @@ function Login(props) {
         setLoading(false);
     }
 
-    // useEffect(() => {
-    //     const loggedInUser = localStorage.getItem('user');
-    //     console.log(loggedInUser, "this");
-    //     setLogUsername(loggedInUser);
-    //     console.log(logUsername);
-    //     if (loggedInUser != null) {
-    //         console.log(logUsername);
-    //         props.user('y', loggedInUser, 1);
-    //     }
-    // })
-
     function cB(data, username, redirect) {
         // setProfileName(username);
         // data === 'y' && setUser(true, () => { console.log(user); });

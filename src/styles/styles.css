@@ -4,7 +4,7 @@ body {
     color: rgb(255, 253, 251);
 }
 
-h1 {
+.quiz-header {
     margin-top: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -274,9 +274,9 @@ header {
     left: 45%;
 }
 
-.loading-container {
-    /* padding: 0.3rem; */
-}
+/* .loading-container {
+     padding: 0.3rem; 
+} */
 
 @keyframes spinner {
     0% {
@@ -304,14 +304,17 @@ header {
     animation: spinner 1.5s linear infinite;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 33rem) {
+    body {
+        background-color: rgb(23, 49, 68);
+    }
+
     h2 {
         text-align: center;
         margin: auto;
         padding: 0;
-        font-size: smaller;
-        position: relative;
-        left: 13%;
+        font-size: 1.3rem;
+        /* left: 13%; */
     }
 
     .navbar {
@@ -319,16 +322,43 @@ header {
     }
 
     .home-logo {
-        position: relative;
-        min-width: 9%;
-        right: 50%;
-        margin-top: 0.13rem;
+        position: absolute;
+        min-width: 8%;
+        right: 87%;
+        /* margin-top: 0.13rem; */
+        top: 0.19rem;
+    }
 
+    .user-logo {
+        display: none;
     }
 
     .login-btn {
-        position: relative;
-        left: 18%;
+        position: absolute;
+        left: 79%;
+        top: 0.19rem;
+        padding: 0.23rem 0.3rem;
+        color: aliceblue;
+        border-radius: 0.13rem;
+        background-color: transparent;
+        display: inline-block;
+        min-width: 19%;
+        font-size: 0.6rem;
+    }
+
+    .profile-btn {
+        position: absolute;
+        left: 79%;
+        top: 3%;
+        margin-top: 0.3rem;
+        padding: 0.23rem 0.3rem;
+        color: aliceblue;
+        border-radius: 0.13rem;
+        background-color: transparent;
+        text-align: center;
+        display: inline-block;
+        min-width: 19%;
+        font-size: 0.8rem;
     }
 
     .input {
@@ -342,6 +372,24 @@ header {
         border-color: aliceblue;
         border-width: 0.00003rem;
         margin-bottom: 0.13rem;
+    }
+
+    .quiz-header {
+        font-size: 1rem;
+    }
+
+    .quiz-box {
+        width: 80%;
+    }
+
+    .span {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .btn {
+        font-size: 0.9rem;
     }
 
 }

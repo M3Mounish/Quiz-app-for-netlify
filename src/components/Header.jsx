@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <div>
-            <h1>Quiz about computer hardware!</h1>
+            <h1 className="quiz-header">Quiz about computer hardware!</h1>
         </div>
     );
 }
