@@ -4,6 +4,7 @@ import Qnumber from './questions';
 import Score from './Score';
 import Q from '../../questions.json';
 
+
 function Quiz() {
 
     const [questNo, setQuestNo] = useState(0);
